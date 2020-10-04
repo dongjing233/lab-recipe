@@ -1,0 +1,247 @@
+body{
+    font-family: 'David Libre', serif;
+    color: #ac4b1c;
+    background: #f8efd4;
+  }
+
+.head {
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    background-color: #ac4b1c;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+      margin-right: 70px;
+    padding-top: 20px;
+    position: relative;
+    padding-bottom:27px;
+  }
+  
+  nav a {
+    color: #f8efd4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  
+  
+  
+  nav a:hover {
+    color: #f8efd4;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #f8efd4;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+
+  h1, h2, h3{
+  font-family: 'Kanit', sans-serif;
+  }
+  h2{
+      text-decoration: underline;
+      margin-top:60px;
+  }
+  #font{
+    font-family: 'Kanit', sans-serif;
+    margin-top:14px;
+    padding-right:6px;
+  }
+  p{
+    font-size:16pt;
+  }
+  .all{
+    max-width:55%;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .title{
+      margin-top:100px;
+      font-size:1.5vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .time{
+      margin-top:-20px;
+      margin-bottom:-10px;
+  }
+  
+  #name{
+    padding-right:15px;
+  }
+  
+  .intro, .time{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+  }
+  
+  #description{
+  /*     max-width:70%; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    line-height:35px;
+  }
+  
+  .ingredient{
+  /*   justify-content: flex-start; */
+    display:flex;
+      justify-content: center;
+      margin:50px;
+  }
+  
+  .crepe, .ganache{
+    max-width:30%;
+    /* padding-left:100px; */
+    margin-top:-30px;
+    padding-bottom:20px;
+  }
+
+  .crepe{
+    padding-left:150px;
+  }
+  
+  .footer{
+    background-color:#ac4b1c;
+    color:white;
+    display: flex;
+    max-width: 80%;
+    margin-top: 150px;
+    align-content: center;
+    text-align: center;
+  }
+  
+  #small,#datePublished,#post,#context,#author{
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    font-size:1vw;
+  }
+  
+  .margin{
+    display:flex;
+    margin:2vw;
+    margin:auto;
+  }
+
+  .margin2{
+    display:flex;
+    margin:2vw;
+  }
+
+  .big{
+      max-width: 100%;
+      background-color: #ac4b1c;
+  }
+
+  
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #edc988;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ac4b1c;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
